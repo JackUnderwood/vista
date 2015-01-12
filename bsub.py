@@ -3,19 +3,15 @@ from base import UI
 
 
 class B(UI):
-
     def __init__(self, override=None):
         super().__init__()
         print("B __init__", override)
 
         runtime = {
-            'find': ("Click", "path4", ""),
-            'search': ("Type", "path5", "Carrot"),
-            'drop2': ("Select", "path7", "Middle Select"),
-            'submit': ("Click", "path6", "")
+            'myQueue': ("Click", '//*[@id="myqueue"]/span', ""),
+            'myQueueGo': ("Click", '//*[@id="myqueueGo"]', "")
         }
-
         process = UI(override)
         process.update(runtime)
-        order = ('find', 'search', 'drop2', 'submit')
+        order = ('myQueue', 'myQueueGo',)
         process.execute(order)

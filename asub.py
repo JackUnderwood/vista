@@ -7,11 +7,9 @@ class A(UI):
         super().__init__()
         print("A __init__", override)
         runtime = {
-            'init': ("Click", "path1", ""),
-            'login': ("Type", "path2", "Jack Black"),
-            'submit': ("Click", "path3", "")
+            'file': ("Click", "//*[@id='yw1']/li[6]/a/i", ""),
         }
         process = UI(override)
         process.update(runtime)
-        order = ('init', 'login', 'submit')
+        order = ('file',)
         process.execute(order)
