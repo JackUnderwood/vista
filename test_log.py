@@ -1,7 +1,7 @@
 __author__ = 'John Underwood'
 import logging
 
-from colorama import init, Fore, Back, Style
+from colorama import init, Fore, Back
 
 
 init()
