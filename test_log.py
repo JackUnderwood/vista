@@ -1,4 +1,5 @@
 __author__ = 'John Underwood'
+#! python
 import logging
 
 from colorama import init, Fore, Back
